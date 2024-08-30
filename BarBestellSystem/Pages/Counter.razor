@@ -1,4 +1,6 @@
 ﻿@page "/counter"
+@using Application
+@using Microsoft.EntityFrameworkCore
 
 <PageTitle>Counter</PageTitle>
 
@@ -7,13 +9,33 @@
 <p role="status">Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<ol>
+    @foreach(var table in tables)
+    {
+        <li>
+            <p>@table.Id</p>
+            <p>@table.Name</p>
+            <p>@table.X</p>
+            <p>@table.Y</p>
+        </li>
+    }
+    
+</ol>
 
 @code {
     private int currentCount = 0;
-
+    private List<Table> tables;
+    
+    [Inject]
+    private BarDbContext barDbContext { get; set; }
     private void IncrementCount()
     {
         currentCount++;
+    }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        tables = await barDbContext.Tables.ToListAsync();
     }
 
 }

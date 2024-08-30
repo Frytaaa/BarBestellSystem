@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarBestellSystem", "BarBest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{08B01222-FCFA-4998-B50E-0BA3DD518C3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreDatabaseBuilder", "EFCoreDatabaseBuilder\EFCoreDatabaseBuilder.csproj", "{47446F88-B50D-4009-8972-ED70D5BBC3AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{08B01222-FCFA-4998-B50E-0BA3DD518C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08B01222-FCFA-4998-B50E-0BA3DD518C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08B01222-FCFA-4998-B50E-0BA3DD518C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47446F88-B50D-4009-8972-ED70D5BBC3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47446F88-B50D-4009-8972-ED70D5BBC3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47446F88-B50D-4009-8972-ED70D5BBC3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47446F88-B50D-4009-8972-ED70D5BBC3AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
