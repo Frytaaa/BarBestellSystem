@@ -2,7 +2,7 @@
 
 namespace Application;
 
-public class BarDbContext : DbContext
+public class BarDbContext(DbContextOptions<BarDbContext> options) : DbContext(options)
 {
     public DbSet<Table> Tables { get; set; }
 }
