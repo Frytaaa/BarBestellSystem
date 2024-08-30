@@ -2,3 +2,7 @@
 /.idea/.idea.BarBestellSystem/.idea/encodings.xml
 /.idea/.idea.BarBestellSystem/.idea/indexLayout.xml
 /.idea/.idea.BarBestellSystem/.idea/vcs.xml
+/BarBestellSystem/bin/*
+/BarBestellSystem/obj/*
+/Application/bin/*
+/Application/obj/*
